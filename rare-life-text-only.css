@@ -1,0 +1,20 @@
+/* The Rare Life — scoped styling for Vzy */
+#rare-life-site{--rl-bg:#101110;--rl-text:#e9e2d5;--rl-muted:#c9c0b0;--rl-gold:#c9a46b;--rl-line:#3c3933;box-sizing:border-box;width:100%;max-width:none;margin:0 auto;padding:0 22px 110px;background:var(--rl-bg);color:var(--rl-text);font:400 18px/1.75 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;text-align:left}
+#rare-life-site *{box-sizing:border-box}
+#rare-life-site .rl-intro,#rare-life-site .rl-section{max-width:780px;margin:0 auto;padding:82px 0 75px}
+#rare-life-site .rl-intro{padding-top:125px;padding-bottom:105px}
+#rare-life-site .rl-section{border-top:1px solid var(--rl-line)}
+#rare-life-site .rl-site-name{font-size:13px;letter-spacing:.34em;font-weight:750;color:var(--rl-gold);text-transform:uppercase;margin:0 0 14px}
+#rare-life-site h1,#rare-life-site h2{font-family:Georgia,"Times New Roman",serif;color:#f6f0e6;letter-spacing:-.025em;line-height:1.12;font-weight:500}
+#rare-life-site h1{font-size:clamp(52px,9vw,96px);margin:0 0 48px}
+#rare-life-site h2{font-size:clamp(33px,5vw,55px);margin:0 0 36px}
+#rare-life-site p{font-size:inherit;line-height:inherit;color:var(--rl-muted);margin:0 0 23px}
+#rare-life-site .rl-lines{line-height:1.95}
+#rare-life-site .rl-quote{border-left:2px solid var(--rl-gold);padding:8px 0 8px 25px;margin:34px 0 42px;background:none}
+#rare-life-site .rl-quote p{font:normal clamp(21px,3vw,28px)/1.5 Georgia,"Times New Roman",serif;color:#f1e7d8;margin:0 0 16px}
+#rare-life-site .rl-references{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 28px}
+#rare-life-site a.rl-verse{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:var(--rl-gold);font-size:13px;line-height:1.4;letter-spacing:.035em;border:1px solid var(--rl-line);border-radius:7px;padding:10px 14px;background:#ffffff05}
+#rare-life-site a.rl-verse:hover,#rare-life-site a.rl-verse:focus-visible{border-color:var(--rl-gold);background:#ffffff0c}
+#rare-life-site .rl-section:last-child{text-align:center;padding-bottom:90px}
+#rare-life-site .rl-section:last-child p:last-child{font:normal clamp(38px,7vw,64px)/1.2 Georgia,"Times New Roman",serif;color:#f4e7d2;margin:55px 0 0}
+@media(max-width:600px){#rare-life-site{padding:0 20px 70px;font-size:16px}#rare-life-site .rl-intro,#rare-life-site .rl-section{padding:62px 0}#rare-life-site .rl-intro{padding-top:90px}#rare-life-site h1{margin-bottom:34px}#rare-life-site h2{margin-bottom:25px}#rare-life-site .rl-quote{padding-left:16px}}
