@@ -1,77 +1,20 @@
-
-/* Vzy-specific wrapper; the Vzy page's own sections should be removed in its editor. */
-html, body { margin: 0; background: #0d0e0e; }
-#rare-life-site { display:block; width:100%; max-width:none; overflow:hidden; min-height:100vh; background:#0d0e0e; color:#f1e7d3; }
-#rare-life-site header, #rare-life-site main, #rare-life-site section, #rare-life-site figure, #rare-life-site footer { max-width:none; }
-#rare-life-site figure { margin:0; }
-#rare-life-site a { cursor:pointer; }
-#rare-life-site{--ink:#0d0e0e;--panel:#141515;--paper:#f1e7d3;--muted:#b8ad9a;--gold:#c69a63;--line:#35322d;--max:820px}
+/* The Rare Life — scoped styling for Vzy */
+#rare-life-site{--rl-bg:#101110;--rl-text:#e9e2d5;--rl-muted:#c9c0b0;--rl-gold:#c9a46b;--rl-line:#3c3933;box-sizing:border-box;width:100%;max-width:none;margin:0 auto;padding:0 22px 110px;background:var(--rl-bg);color:var(--rl-text);font:400 18px/1.75 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;text-align:left}
 #rare-life-site *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-#rare-life-site{margin:0;background:var(--ink);color:var(--paper);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
-#rare-life-site a{color:inherit}
-
-
-
-#rare-life-site .hero{min-height:92svh;display:grid;place-items:center;text-align:center;padding:8rem 1.5rem 5rem;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 30%,#25221d 0,transparent 38%),linear-gradient(#0b0c0c,#101111)}
-#rare-life-site .hero:after{content:"";position:absolute;inset:auto 0 0;height:34%;background:linear-gradient(transparent,var(--ink))}
-#rare-life-site .brandmark{width:min(410px,76vw);position:relative;z-index:1;filter:drop-shadow(0 20px 40px #0008)}
-#rare-life-site .brandmark svg{display:block;width:100%;height:auto}
-#rare-life-site .kicker{position:relative;z-index:1;margin-top:2rem;text-transform:uppercase;letter-spacing:.32em;font-size:.78rem;color:var(--gold)}
-#rare-life-site .hero h1{position:relative;z-index:1;margin:.6rem 0 0;font-weight:500;letter-spacing:.08em;font-size:clamp(2.6rem,8vw,6rem);line-height:.95}
-#rare-life-site .hero p{position:relative;z-index:1;max-width:650px;color:#d3c9b8;font-size:1.08rem;margin:1.6rem auto 0}
-#rare-life-site .wrap{width:min(var(--max),calc(100% - 2.5rem));margin:auto}
-
-
-
-#rare-life-site .section{padding:7rem 0;border-top:1px solid #242321}
-#rare-life-site .section:first-of-type{border-top:0}
-#rare-life-site .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.26em;font-size:.72rem;font-weight:700}
-#rare-life-site .section h2{font-size:clamp(2.3rem,7vw,4.8rem);line-height:.98;margin:.65rem 0 2rem;letter-spacing:-.04em;font-weight:650}
-#rare-life-site .section p{font-size:1.08rem;color:#d7cebe;margin:1rem 0}
-#rare-life-site .beats{font-size:clamp(1.45rem,4vw,2.2rem)!important;line-height:1.55!important;color:var(--paper)!important;margin:2.2rem 0!important}
-#rare-life-site .beats span{display:block}
-#rare-life-site .scripture{display:block;text-decoration:none;margin:2rem 0;padding:1.15rem 1.25rem;border:1px solid var(--line);border-radius:14px;background:#ffffff05;transition:.2s ease}
-#rare-life-site .scripture:hover{border-color:var(--gold);background:#ffffff09;transform:translateY(-2px)}
-
-
-
-#rare-life-site .scripture .quote{display:block;font-family:Georgia,"Times New Roman",serif;font-size:1.16rem;line-height:1.55;color:#f2eadc;margin-bottom:.65rem}
-#rare-life-site .scripture .ref{display:flex;justify-content:space-between;gap:1rem;align-items:center;text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:700;color:var(--gold)}
-#rare-life-site .scripture .ref em{font-style:normal;color:#918777;font-weight:500;letter-spacing:.06em}
-#rare-life-site .contrast{display:grid;gap:.7rem;margin:2rem 0}
-#rare-life-site .contrast div{padding:1.1rem 0;border-bottom:1px solid #292724;font-size:1.13rem}
-#rare-life-site .contrast b{color:var(--paper)}
-#rare-life-site .photo-break{height:clamp(260px,38svh,430px);position:relative;overflow:hidden;border-block:1px solid #332f29;background:#151515}
-#rare-life-site .photo-break img{width:100%;height:100%;object-fit:cover;display:block;filter:sepia(.28) saturate(.62) contrast(1.08) brightness(.56)}
-
-
-
-#rare-life-site .photo-break:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0d0e0e99,transparent 28%,transparent 72%,#0d0e0e99),linear-gradient(180deg,#0d0e0e66,transparent 35%,#0d0e0e88)}
-#rare-life-site .photo-break .caption{position:absolute;z-index:2;left:max(1.25rem,calc((100% - var(--max))/2));bottom:1.2rem;color:#d8cbb6;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;text-shadow:0 2px 10px #000}
-#rare-life-site .photo-break.river img{object-position:center 55%}
-#rare-life-site .photo-break.steps img{object-position:center 58%}
-#rare-life-site .section:nth-of-type(even){background:linear-gradient(90deg,transparent,#ffffff025 50%,transparent)}
-#rare-life-site .closing{text-align:center;padding:9rem 0 10rem}
-#rare-life-site .closing h2{font-size:clamp(3rem,10vw,7rem)}
-#rare-life-site .closing .final{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2rem,6vw,4rem);color:var(--paper);margin-top:3rem}
-#rare-life-site .footer{text-align:center;padding:2rem 1rem 3rem;color:#766f64;font-size:.8rem;border-top:1px solid #242321}
-
-
-
-@media(max-width:600px){#rare-life-site .section{padding:5rem 0}
-#rare-life-site .hero{padding-top:6rem}
-#rare-life-site .scripture .ref{align-items:flex-start;flex-direction:column;gap:.25rem}}
-
-/* Refinements: calmer editorial hierarchy and visual breaks */
-#rare-life-site .hero{min-height:78svh;padding:5rem 1.5rem 4rem;display:flex;flex-direction:column;align-items:center;justify-content:center}
-#rare-life-site .brandmark{width:min(290px,62vw)}
-#rare-life-site .hero h1{font-size:clamp(2.8rem,6vw,4.8rem);letter-spacing:-.025em;line-height:1.08;font-weight:600}
-#rare-life-site .hero p{font-size:clamp(1rem,1.7vw,1.15rem);max-width:610px}
-#rare-life-site .section{padding:clamp(3.8rem,7vw,6rem) 0}
-#rare-life-site .section h2{font-size:clamp(2.15rem,5vw,3.65rem);line-height:1.1;letter-spacing:-.025em;font-weight:600}
-#rare-life-site .photo-break{height:clamp(230px,32svh,370px);margin:2.25rem 0}
-#rare-life-site .photo-break img{filter:sepia(.18) saturate(.75) contrast(1.05) brightness(.69)}
-#rare-life-site .closing h2{font-size:clamp(2.7rem,6vw,4.5rem)}
-#rare-life-site .closing{padding:6rem 0 7rem}
-@media(max-width:600px){#rare-life-site .hero{min-height:72svh;padding:4rem 1.25rem}#rare-life-site .section{padding:3.7rem 0}}
+#rare-life-site .rl-intro,#rare-life-site .rl-section{max-width:780px;margin:0 auto;padding:82px 0 75px}
+#rare-life-site .rl-intro{padding-top:125px;padding-bottom:105px}
+#rare-life-site .rl-section{border-top:1px solid var(--rl-line)}
+#rare-life-site .rl-site-name{font-size:13px;letter-spacing:.34em;font-weight:750;color:var(--rl-gold);text-transform:uppercase;margin:0 0 14px}
+#rare-life-site h1,#rare-life-site h2{font-family:Georgia,"Times New Roman",serif;color:#f6f0e6;letter-spacing:-.025em;line-height:1.12;font-weight:500}
+#rare-life-site h1{font-size:clamp(52px,9vw,96px);margin:0 0 48px}
+#rare-life-site h2{font-size:clamp(33px,5vw,55px);margin:0 0 36px}
+#rare-life-site p{font-size:inherit;line-height:inherit;color:var(--rl-muted);margin:0 0 23px}
+#rare-life-site .rl-lines{line-height:1.95}
+#rare-life-site .rl-quote{border-left:2px solid var(--rl-gold);padding:8px 0 8px 25px;margin:34px 0 42px;background:none}
+#rare-life-site .rl-quote p{font:normal clamp(21px,3vw,28px)/1.5 Georgia,"Times New Roman",serif;color:#f1e7d8;margin:0 0 16px}
+#rare-life-site .rl-references{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 28px}
+#rare-life-site a.rl-verse{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:var(--rl-gold);font-size:13px;line-height:1.4;letter-spacing:.035em;border:1px solid var(--rl-line);border-radius:7px;padding:10px 14px;background:#ffffff05}
+#rare-life-site a.rl-verse:hover,#rare-life-site a.rl-verse:focus-visible{border-color:var(--rl-gold);background:#ffffff0c}
+#rare-life-site .rl-section:last-child{text-align:center;padding-bottom:90px}
+#rare-life-site .rl-section:last-child p:last-child{font:normal clamp(38px,7vw,64px)/1.2 Georgia,"Times New Roman",serif;color:#f4e7d2;margin:55px 0 0}
+@media(max-width:600px){#rare-life-site{padding:0 20px 70px;font-size:16px}#rare-life-site .rl-intro,#rare-life-site .rl-section{padding:62px 0}#rare-life-site .rl-intro{padding-top:90px}#rare-life-site h1{margin-bottom:34px}#rare-life-site h2{margin-bottom:25px}#rare-life-site .rl-quote{padding-left:16px}}
