@@ -62,3 +62,16 @@ html{scroll-behavior:smooth}
 @media(max-width:600px){#rare-life-site .section{padding:5rem 0}
 #rare-life-site .hero{padding-top:6rem}
 #rare-life-site .scripture .ref{align-items:flex-start;flex-direction:column;gap:.25rem}}
+
+/* Refinements: calmer editorial hierarchy and visual breaks */
+#rare-life-site .hero{min-height:78svh;padding:5rem 1.5rem 4rem;display:flex;flex-direction:column;align-items:center;justify-content:center}
+#rare-life-site .brandmark{width:min(290px,62vw)}
+#rare-life-site .hero h1{font-size:clamp(2.8rem,6vw,4.8rem);letter-spacing:-.025em;line-height:1.08;font-weight:600}
+#rare-life-site .hero p{font-size:clamp(1rem,1.7vw,1.15rem);max-width:610px}
+#rare-life-site .section{padding:clamp(3.8rem,7vw,6rem) 0}
+#rare-life-site .section h2{font-size:clamp(2.15rem,5vw,3.65rem);line-height:1.1;letter-spacing:-.025em;font-weight:600}
+#rare-life-site .photo-break{height:clamp(230px,32svh,370px);margin:2.25rem 0}
+#rare-life-site .photo-break img{filter:sepia(.18) saturate(.75) contrast(1.05) brightness(.69)}
+#rare-life-site .closing h2{font-size:clamp(2.7rem,6vw,4.5rem)}
+#rare-life-site .closing{padding:6rem 0 7rem}
+@media(max-width:600px){#rare-life-site .hero{min-height:72svh;padding:4rem 1.25rem}#rare-life-site .section{padding:3.7rem 0}}
